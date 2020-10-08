@@ -1,0 +1,220 @@
+<!--pages/subject/subject.wxml-->
+<view class="content">
+<view class="section">
+<swiper autoplay="true" interval="3000" duration="1000" circular="ture" indicator-dots="{{indicatorDots}}">
+<block wx:for="{{imgUrls}}">
+<swiper-item>
+<image src="{{item}}" class="slide-image" width="350" height="211" />
+</swiper-item>
+</block>
+</swiper>
+</view>
+</view>
+<view class="opr">
+<view class="btn">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5owvn.uzvQP.D9omt9QTmggM1wS.xPeLONHEerikv*nMKgztbSaIPHVGMj3TIE1AfNVHDYcmDAdeZNlle1872VU!/b&bo=yADIAAAAAAADByI!&rf=viewer_4&t=5" style="width:25px; height:25px;"></image>
+</view>
+<view>最新</view>
+</view>
+<view class="btn">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwCpar2HT2n.oc0s32yxF4C26D8w0*xCslAtmxuwwZkSMcB4hxo4W2qhxe8q7WoyNOk!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:25px; height:25px;"></image>
+</view>
+<view>最赞</view>
+</view>
+</view>
+<!-- 列表 -->
+<view class="list">
+<view class="item" bindtap="seeDetail" id="0">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcQQGYMjulTMZm0dLbGwKSIVXzXtTGkR.ApItX.O8meJZS9cFosx7O5UBGT3MP9FAogvkR22Xv0Mxhtr0H4*d.48!/b&bo=NwQ8BAAAAAABFzs!&rf=viewer_4" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">爱心早餐</view>
+<view class="count">
+<view>共26个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+<!-- 第二行 -->
+<view class="item" bindtap="seeDetail" id="1">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcdv.XPLm.S9vpeQtRhfYaeRIrwVSGfSNsp84H0jh*27YBq0bO.X1SV8nzfd6quNzI8w5ZJUcR60k1uK2hQB2ROs!/b&bo=NwQ6BAAAAAABFz0!&rf=viewer_4&t=5" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">秋天第一杯奶茶</view>
+<view class="count">
+<view>共29个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+<view class="item" bindtap="seeDetail" id="2">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcaS26ph7czPYPgcXJbiEe4l6x4pojjhXbYIPhNbep78UkKKjWYd8GJoN6cUws1TOHdvTWapQW21sMKBv6QeQ59I!/b&bo=NwQxBAAAAAABFzY!&rf=viewer_4&t=5" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">糯米饭</view>
+<view class="count">
+<view>共30个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+<view class="item" bindtap="seeDetail" id="3">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcQQGYMjulTMZm0dLbGwKSIUMISI3xMxVw8Ig92rxeD8FDQoEnan6kmyuil*iAm..BlWzY9VWkHgkkHt7YxhvXO4!/b&bo=LAQqBAAAAAABFzY!&rf=viewer_4" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">简易小吃</view>
+<view class="count">
+<view>共26个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+<view class="item" bindtap="seeDetail" id="4">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcQQGYMjulTMZm0dLbGwKSIVXzXtTGkR.ApItX.O8meJZS9cFosx7O5UBGT3MP9FAogvkR22Xv0Mxhtr0H4*d.48!/b&bo=NwQ8BAAAAAABFzs!&rf=viewer_4&t=5" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">烤箱美食</view>
+<view class="count">
+<view>共26个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+<view class="item" bindtap="seeDetail" id="5">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5oElzx3Qk3.bI8mT.GoOWPEoQeDlXfhusXnEAbLFN0a9JyFZn2zkSc7zXWWxB24938sAb4aqsaMaGdKDDYvxOK4!/b&bo=NwQ7BAAAAAABByw!&rf=viewer_4&t=5http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5qWyXwpIbZyRhbYo1RNgozba*Z0f8C2kLW06l6y7tgyXZIZkxB1h5nwuQRi1aCMcmDxvhQRhacvGq.rmRQYnGRQ!/b&bo=NwQ2BAAAAAABByE!&rf=viewer_4&t=5" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">秋天第一杯奶茶</view>
+<view class="count">
+<view>共26个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+<view class="item" bindtap="seeDetail" id="6">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5oElzx3Qk3.bI8mT.GoOWPEoQeDlXfhusXnEAbLFN0a9JyFZn2zkSc7zXWWxB24938sAb4aqsaMaGdKDDYvxOK4!/b&bo=NwQ7BAAAAAABByw!&rf=viewer_4&t=5http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5qWyXwpIbZyRhbYo1RNgozba*Z0f8C2kLW06l6y7tgyXZIZkxB1h5nwuQRi1aCMcmDxvhQRhacvGq.rmRQYnGRQ!/b&bo=NwQ2BAAAAAABByE!&rf=viewer_4&t=5" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">秋天第一杯奶茶</view>
+<view class="count">
+<view>共26个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+<view class="item" bindtap="seeDetail" id="7">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5oElzx3Qk3.bI8mT.GoOWPEoQeDlXfhusXnEAbLFN0a9JyFZn2zkSc7zXWWxB24938sAb4aqsaMaGdKDDYvxOK4!/b&bo=NwQ7BAAAAAABByw!&rf=viewer_4&t=5http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5qWyXwpIbZyRhbYo1RNgozba*Z0f8C2kLW06l6y7tgyXZIZkxB1h5nwuQRi1aCMcmDxvhQRhacvGq.rmRQYnGRQ!/b&bo=NwQ2BAAAAAABByE!&rf=viewer_4&t=5" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">秋天第一杯奶茶</view>
+<view class="count">
+<view>共26个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+<view class="item" bindtap="seeDetail" id="8">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5oElzx3Qk3.bI8mT.GoOWPEoQeDlXfhusXnEAbLFN0a9JyFZn2zkSc7zXWWxB24938sAb4aqsaMaGdKDDYvxOK4!/b&bo=NwQ7BAAAAAABByw!&rf=viewer_4&t=5http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5qWyXwpIbZyRhbYo1RNgozba*Z0f8C2kLW06l6y7tgyXZIZkxB1h5nwuQRi1aCMcmDxvhQRhacvGq.rmRQYnGRQ!/b&bo=NwQ2BAAAAAABByE!&rf=viewer_4&t=5" style="width:78px;height:60px;"></image>
+</view>
+<view class="desc">
+<view class="title">秋天第一杯奶茶</view>
+<view class="count">
+<view>共26个菜谱</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mcSMW3Pnt0dYVqxF2sp0OgwAXDwWpPBmaaKaeHIOlhNsO11*1hnBWaZqSY*18N.zaos3a..wPP*w23OEujq72VIY!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:18px;height:17px;"></image>
+</view>
+<view>19</view>
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/45NBuzDIW489QBoVep5mccfs5wGsi13OWbFKno80FBzkWR.WBkmW7.BN6lDWVE5OnRngWopiOna1FTXCyJoVjK.QcH21EFcT2mgrFx7a4y4!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4&t=5" style="width:23px;height:17px;"></image>
+</view>
+<view>13298</view>
+</view>
+</view>
+</view>
+<view class="hr"></view>
+
+
+</view>

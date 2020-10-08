@@ -1,0 +1,71 @@
+<view class="content">
+  <view class="bg">
+  <view class="head">
+  <view class="headIcon">
+  <image src="{{userInfo.avatarUrl}}" style="width:70px;height:70px;"></image>
+  </view>
+  <view class="login">
+  {{userInfo.nickName}}
+  </view>
+  <view class="detail"> 
+  <text></text>
+  </view>
+  </view>
+  <view class="count">
+  <view class="desc">
+  <view>10</view>
+  <view>关注</view>
+  </view>
+  <view class="desc">
+  <view>10</view>
+  <view>关注</view>
+  </view>
+  <view class="desc" style="boreder:0px;">
+  <view>300</view>
+  <view>7天访客</view>
+  </view>
+  </view>
+</view>
+</view>
+<view class="nav">
+<view class="nav-item">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5owvn.uzvQP.D9omt9QTmggM1wS.xPeLONHEerikv*nMKgztbSaIPHVGMj3TIE1AfNVHDYcmDAdeZNlle1872VU!/b&bo=yADIAAAAAAADByI!&rf=viewer_4&t=5" style="width:25px; height:25px;"></image>
+</view>
+<view>收藏</view>
+</view>
+<view class="nav-item">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5owvn.uzvQP.D9omt9QTmggM1wS.xPeLONHEerikv*nMKgztbSaIPHVGMj3TIE1AfNVHDYcmDAdeZNlle1872VU!/b&bo=yADIAAAAAAADByI!&rf=viewer_4&t=5" style="width:25px; height:25px;"></image>
+</view>
+<view>历史</view>
+</view>
+<view class="nav-item">
+<view>
+<image src="http://m.qpic.cn/psc?/V51u6aVx1s44E34bNCql1tLYmn1iY5I6/ruAMsa53pVQWN7FLK88i5owvn.uzvQP.D9omt9QTmggM1wS.xPeLONHEerikv*nMKgztbSaIPHVGMj3TIE1AfNVHDYcmDAdeZNlle1872VU!/b&bo=yADIAAAAAAADByI!&rf=viewer_4&t=5" style="width:25px; height:25px;"></image>
+</view>
+<view>夜间</view>
+</view>
+</view>
+<view class="hr"></view>
+<view class="item">
+<view class="order">消息通知</view>
+<view class="detail2">
+<text>></text>
+</view>
+</view>
+<view class="hr"></view>
+<view class="item">
+<view class="order">我的收藏</view>
+<view class="detail2">点击观看</view>
+</view>
+<view class="hr"></view>
+<view class="item">
+<view class="order">我的菜单</view>
+<view class="detail2">点击观看</view>
+</view>
+<view class="hr"></view>
+<view class="item">
+<view class="order">我的发布</view>
+<view class="detail2">点击观看</view>
+</view>

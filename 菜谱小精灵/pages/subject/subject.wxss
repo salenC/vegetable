@@ -1,0 +1,53 @@
+/* pages/subject/subject.wxss */
+.content{
+  background-color: #F2F2F2;
+}
+.section image{
+  width: 100%;
+}
+.opr{
+  display: flex;
+  flex-direction: row;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  width: 43%;
+  background-color: #ffffff;
+  height: 46px;
+  margin: 0 auto;
+  margin-top: 10px;
+  line-height: 46px;
+  border-radius: 5px;
+}
+.btn view{
+  margin: 0 auto;
+  margin-top: 3px;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+.desc{
+  margin-left: 20px;
+  line-height: 30px;
+}
+.title {
+  font-weight: bold;
+}
+.count{
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  color: #666666;
+}
+.count image{
+  margin-left: 10px;
+  margin-top: 7px;
+}
+.hr{
+  height: 1px;
+  background-color: #cccccc;
+  opacity: 0.5;
+}
